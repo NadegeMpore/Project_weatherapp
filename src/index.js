@@ -1,3 +1,5 @@
+
+
 //Feature (1) Displaying the current date and time
 function currentDate() {
   let date_now = new Date();
@@ -15,7 +17,7 @@ function currentDate() {
     "Wednesday",
     "Thusday",
     "Friday",
-    "Saturday",
+    "Saturday"
   ];
 
   // let's create an array of months
@@ -31,7 +33,7 @@ function currentDate() {
     "September",
     "October",
     "November",
-    "December",
+    "December"
   ];
   let today = `${days[day_today]}, ${months[month]} ${currentDate}, ${year}`;
   return today;
@@ -80,7 +82,7 @@ function Find_City(city) {
 }
 function submitButton(event) {
   event.preventDefault();
-  let city = document.querySelector("#world-cities");
+  let city = document.querySelector("#world-cities").value;
   Find_City(city);
 }
 
